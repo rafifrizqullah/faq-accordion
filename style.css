@@ -63,7 +63,7 @@ body {
   height: 24px;
 }
 
-.card-header h1 {
+.card-title {
   margin-left: 1.4rem;
 }
 
@@ -79,6 +79,7 @@ body {
   padding: 1.3rem 0;
   border: none;
   background-color: var(--white);
+  font-family: "Work Sans";
   font-size: 16px;
   font-weight: 600;
   text-align: left;
@@ -92,7 +93,7 @@ body {
   content: url("assets/images/icon-plus.svg");
   width: 30px;
   height: 30px;
-  margin-left: 1.4rem;
+  margin-left: 1rem;
 }
 
 .accordion-button:hover {
@@ -138,7 +139,7 @@ body {
     height: 40px;
   }
 
-  .card-header h1 {
+  .card-title {
     font-size: 55px;
   }
 
