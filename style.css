@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("assets/fonts/WorkSans-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: italic;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --purple: hsl(281, 83%, 54%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5rem;
+  background-color: var(--light-pink);
+  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--white);
+  max-width: 327px;
+  padding: 1.5rem 1.5rem 0.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 42px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.card-header img {
+  width: 24px;
+  height: 24px;
+}
+
+.card-header h1 {
+  margin-left: 1.4rem;
+}
+
+.accordion h2 {
+  font-size: 16px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--light-pink);
+}
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 1.3rem 0;
+  border: none;
+  background-color: var(--white);
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.accordion-button::after {
+  content: url("assets/images/icon-plus.svg");
+  width: 30px;
+  height: 30px;
+  margin-left: 1.4rem;
+}
+
+.accordion-button:hover {
+  cursor: pointer;
+  color: var(--purple);
+}
+
+.active::after {
+  content: url("assets/images/icon-minus.svg");
+}
+
+.accordion-collapse {
+  display: none;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-size: 100% auto;
+  }
+
+  .card {
+    min-width: 600px;
+    border-radius: 1rem;
+    padding: 2.5rem 2.5rem 1rem;
+  }
+
+  .card-header {
+    padding: 1rem 0;
+  }
+
+  .card-header img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-header h1 {
+    font-size: 55px;
+  }
+
+  .accordion h2 {
+    font-size: 18px;
+  }
+
+  .accordion-button {
+    padding: 1.5rem 0;
+  }
+
+  .accordion-collapse {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+  }
+}
