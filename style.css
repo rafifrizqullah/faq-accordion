@@ -105,10 +105,14 @@ body {
   content: url("assets/images/icon-minus.svg");
 }
 
-.accordion-collapse {
+.accordion-body {
   display: none;
   font-size: 14px;
   margin-bottom: 1rem;
+}
+
+.accordion-body.show {
+  display: block;
 }
 
 .attribution {
@@ -148,7 +152,7 @@ body {
     padding: 1.5rem 0;
   }
 
-  .accordion-collapse {
+  .accordion-body {
     font-size: 16px;
     margin-bottom: 1.5rem;
   }
