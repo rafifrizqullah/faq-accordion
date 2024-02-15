@@ -67,10 +67,6 @@ body {
   margin-left: 1.4rem;
 }
 
-.accordion h2 {
-  font-size: 16px;
-}
-
 .accordion-item {
   border-bottom: 1px solid var(--light-pink);
 }
@@ -83,6 +79,8 @@ body {
   padding: 1.3rem 0;
   border: none;
   background-color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -144,11 +142,8 @@ body {
     font-size: 55px;
   }
 
-  .accordion h2 {
-    font-size: 18px;
-  }
-
   .accordion-button {
+    font-size: 18px;
     padding: 1.5rem 0;
   }
 
