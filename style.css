@@ -93,7 +93,7 @@ body {
   content: url("assets/images/icon-plus.svg");
   width: 30px;
   height: 30px;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .accordion-button:hover {
