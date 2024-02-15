@@ -149,11 +149,9 @@ body {
 
   .accordion-button {
     font-size: 18px;
-    padding: 1.5rem 0;
   }
 
   .accordion-body {
     font-size: 16px;
-    margin-bottom: 1.5rem;
   }
 }
